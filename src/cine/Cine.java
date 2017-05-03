@@ -18,7 +18,7 @@ public class Cine extends Application {
     public static AccesoaBD acceso = new AccesoaBD();
     @Override
     public void start(Stage stage) throws IOException {
-        
+        //Holla
         FXMLLoader loader = new FXMLLoader(getClass().getResource("InterfazPrincipal.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
