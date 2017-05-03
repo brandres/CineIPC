@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cine.InterfazPrincipalController">
+   <children>
+      <ChoiceBox fx:id="choicePelicula" layoutX="144.0" layoutY="212.0" prefWidth="150.0" styleClass="choiceBox" stylesheets="@interfazcine.css" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="144.0" />
+      <ChoiceBox fx:id="choiceHora" layoutX="144.0" layoutY="139.0" prefHeight="27.0" prefWidth="76.0" styleClass="choiceBox" stylesheets="@interfazcine.css" AnchorPane.leftAnchor="144.0" />
+      <ChoiceBox fx:id="choiceSala" layoutX="144.0" layoutY="290.0" prefWidth="150.0" styleClass="choiceBox" stylesheets="@interfazcine.css" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="144.0" />
+      <ChoiceBox fx:id="choiceDia" layoutX="245.0" layoutY="139.0" prefWidth="150.0" styleClass="choiceBox" stylesheets="@interfazcine.css" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="143.0" />
+      <Separator layoutX="-1.0" layoutY="96.0" prefHeight="0.0" prefWidth="348.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button layoutX="161.0" layoutY="31.0" mnemonicParsing="false" onAction="#asignarBoton" prefHeight="27.0" prefWidth="219.0" text="Asignar asientos de una reserva" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="158.0" AnchorPane.topAnchor="31.0" />
+      <Label layoutX="245.0" layoutY="183.0" text="Pelicula" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="245.0" />
+      <Label layoutX="236.0" layoutY="111.0" prefHeight="17.0" prefWidth="67.0" text="Dia y hora" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="235.0" />
+      <Label layoutX="255.0" layoutY="259.0" prefHeight="17.0" prefWidth="29.0" text="Sala" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="254.0" />
+      <GridPane hgap="10.0" layoutX="169.0" layoutY="317.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="21.0" layoutY="3.0" mnemonicParsing="false" onAction="#reservarBoton" stylesheets="@interfazcine.css" text="Reservar entradas" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Button layoutX="21.0" layoutY="3.0" mnemonicParsing="false" onAction="#ventaBoton" stylesheets="@interfazcine.css" text="Realizar venta de entradas" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

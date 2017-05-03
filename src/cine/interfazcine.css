@@ -1,0 +1,26 @@
+
+.root{
+    -fx-background-color: grey;
+}
+.button {
+    -fx-background-color: white; 
+    -fx-text-fill: black; 
+}
+.button:hover {
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 8 ,0 , 0 );
+}
+.choiceBox{
+   -fx-background-color: white; 
+    -fx-text-fill: black;
+}
+.choiceBox:active{
+    -fx-background-color: white; 
+    -fx-text-fill: black; 
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+}
+.button:pressed{
+    -fx-background-color: black; 
+    -fx-text-fill: white; 
+}
